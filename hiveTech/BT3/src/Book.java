@@ -41,7 +41,12 @@ public class Book {
     }
 
     public String toString(){
-        return "Book[name="+this.name+author.toString()+
+        return "Book[name="+this.name+","author.toString()+
                 ",price="+this.price+",qty="+this.qty;
+    }
+    public static void main(String[] args) {
+        Author author1 = new Author("John", "John123@email.com", 'F');
+        Book book = new Book("Hoang tu be",author1, 50, 5);
+        System.out.println(book);
     }
 }
